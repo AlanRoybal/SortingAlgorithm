@@ -1,10 +1,10 @@
-public class StringQuickSort {
+public class stringsortingalgorithm {
 
     String names[];
     int length;
 
     public static void main(String[] args) {
-        StringQuickSort sorter = new StringQuickSort();
+        stringsortingalgorithm sorter = new stringsortingalgorithm();
         String words[] = {"zz", "aa", "cc", "hh", "bb", "ee", "ll"}; // the strings need to be sorted are put inside this array
         sorter.sort(words);
 
