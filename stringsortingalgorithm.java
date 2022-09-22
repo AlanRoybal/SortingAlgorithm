@@ -10,7 +10,7 @@ public class stringsortingalgorithm {
 
         for (String i : words) {
             System.out.print(i);
-            System.out.print(" ");
+            System.out.print("\n");
         }
     }
 
