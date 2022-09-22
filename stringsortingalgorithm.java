@@ -20,11 +20,6 @@ public class stringsortingalgorithm {
 	nameList.put(3, "Adheesh");  
 	nameList.put(4, "Katru");  
 	nameList.put(5, "Heng Yi");  
-	nameList.put(6, "Lee");  
-	nameList.put(7, "Zoe");
-	nameList.put(8, "Yau");
-	nameList.put(9, "David");
-	nameList.put(10, "Ben-Yaakov");
 	System.out.println("Given names:");
 	
 	Set nameset = nameList.entrySet();  
