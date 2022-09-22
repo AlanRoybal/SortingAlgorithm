@@ -9,23 +9,60 @@ import java.util.LinkedList;
 import java.util.List;  
 import java.util.Map;  
 import java.util.Set;
+import java.io.*;
+import java.util.*;
 
 public class stringsortingalgorithm {
+    final static String filePath = "dict.txt";
     
     public static void main(String[] args) {  
 
-	HashMap<Integer, String> nameList = new HashMap<Integer, String>();  
-	nameList.put(1, "Alan");  
-	nameList.put(2, "Roybal");  
-	nameList.put(3, "Adheesh");  
-	nameList.put(4, "Katru");  
-	nameList.put(5, "Heng Yi");  
-	nameList.put(6, "Lee");  
-	nameList.put(7, "Zoe");
-	nameList.put(8, "Yau");
-	nameList.put(9, "David");
-	nameList.put(10, "Ben-Yaakov");
-	System.out.println("Given names:");
+	Map<String, String> mapFromFile = HashMapFromTextFile();  
+
+	for (Map.Entry<String, String> entry : mapFromFile.entrySet() ) {
+	    System.out.println(entry.getValue());
+	}
+    }
+
+    public static Map<String, String> HashMapFromTextFile() {
+	Map<String, String> map = new HashMap<String, String>();
+	BufferedReader br = null;
+
+	try {
+	    File file = new File(filePath);
+
+	    br = new BufferedReader(new FileReader(file));
+
+	    String line = null;
+
+	    while ((line = br.readLine()) != null) {
+
+		String[] name = .trim();
+		String number = parts[1].trim();
+
+		if (!name.equals("") && !number.equals(""))
+		    map.put(name,number);
+		    }
+	}
+	catch (Exception e) {
+	    e.printStackTrace();
+	}
+	finally {
+	    if (br != null) {
+		try {
+		    br.close();
+		}
+		catch (Exception e) {
+		};
+	    }
+	}
+	return map;
+    }
+}
+/*
+
+
+    
 	
 	Set nameset = nameList.entrySet();  
 	Iterator nameiterator = nameset.iterator();  
@@ -64,3 +101,4 @@ public class stringsortingalgorithm {
 	return sortednameHashMap;  
     }  
 }  
+*/
