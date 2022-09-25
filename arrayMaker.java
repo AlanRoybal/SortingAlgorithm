@@ -15,7 +15,7 @@ public class arrayMaker {
             = new ArrayList<String>();
        
         // load data from file
-        FileReader fr = new FileReader("random.txt");
+        FileReader fr = new FileReader("dict.txt");
        
         // Created a string to store each character
         // to form word
