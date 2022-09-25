@@ -10,7 +10,7 @@ public class stringsortingalgorithm {
     
     public static void main(String[] args) {
         stringsortingalgorithm sorter = new stringsortingalgorithm();
-        String words[] =
+        String words[] = {"zz", "aa", "cc", "hh", "bb", "ee", "ll"};
 	    sorter.sort(words);
 
         for (String i : words) {
