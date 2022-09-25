@@ -15,7 +15,7 @@ public class arrayMaker {
             = new ArrayList<String>();
        
         // load data from file
-        FileReader fr = new FileReader("words.txt");
+        FileReader fr = new FileReader("random.txt");
        
         // Created a string to store each character
         // to form word
@@ -51,8 +51,8 @@ public class arrayMaker {
             = listOfStrings.toArray(new String[0]);
         
         stringsortingalgorithm sorter = new stringsortingalgorithm();
-        String words[] = {"zz", "aa", "cc", "hh", "bb", "ee", "ll"};
-	    sorter.sort(words);
+        String words[] = array1.clone();
+	sorter.sort(words);
 
         for (String i : words) {
             System.out.print(i);
